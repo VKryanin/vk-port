@@ -1,0 +1,35 @@
+.navbar {
+    grid-area: navbar;
+
+    &List {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding: 50px 20px;
+        margin: 0 40px 0;
+        min-height: 100vh;
+    }
+
+    &Item {
+        &:nth-child(4) {
+            gap: 0;
+        }
+
+        &:last-of-type {
+            margin-top: auto;
+        }
+    }
+
+    &Link {
+        writing-mode: vertical-lr;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        color: var(--color-text2);
+
+
+    }
+}
