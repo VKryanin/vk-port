@@ -19,7 +19,7 @@ export const About = () => {
                     onMouseEnter={() => setHovered(true)}
                     onMouseLeave={() => setHovered(false)} rel="noreferrer"
                 >
-                    <img className={styles.saboutImage}
+                    <img className={styles.aboutImage}
                         src={hoverPhoto}
                         alt={hovered ? 'Hovered photo' : 'Normal photo'} />
                     <img

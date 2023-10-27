@@ -3,6 +3,7 @@ import styles from './App.module.scss';
 import { Header } from '../../components/Header/Header';
 import { Main } from '../../components/Main/Main';
 import { NavBar } from '../../components/NavBar/NavBar';
+import { Footer } from '../../components/Footer/Footer';
 
 export const App = () => {
   return (
@@ -10,6 +11,7 @@ export const App = () => {
       <Header />
       <Main />
       <NavBar />
+      <Footer/>
     </div>
   );
 }

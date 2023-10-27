@@ -6,6 +6,7 @@ export const Main = () => {
     return (
         <section className={styles.main}>
             <About />
+            
         </section>
     )
 }

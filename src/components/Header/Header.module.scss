@@ -2,6 +2,9 @@
     grid-area: header;
     box-sizing: border-box;
     height: auto;
+    position: relative;
+    z-index: 5;
+    border: 1px solid pink
 
     &Wrapper {
         max-width: 217px;
