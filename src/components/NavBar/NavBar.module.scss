@@ -1,5 +1,6 @@
 .navbar {
     grid-area: navbar;
+    border: 1px solid red;
 
     &List {
         display: flex;
@@ -8,16 +9,35 @@
         gap: 40px;
         padding: 50px 20px;
         margin: 0 40px 0;
-        min-height: 100vh;
     }
 
     &Item {
+        position: relative;
+
         &:nth-child(4) {
             gap: 0;
         }
 
         &:last-of-type {
             margin-top: auto;
+        }
+
+        &:hover {
+            position: relative;
+            cursor: pointer;
+
+            &::before {
+                content: "";
+                position: absolute;
+                display: flex;
+                top: 50%;
+                left: 100%;
+                transform: translate(50%, -50%);
+                width: 6px;
+                height: 6px;
+                background-color: var(--color-text3);
+                border-radius: 50%;
+            }
         }
     }
 

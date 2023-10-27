@@ -1,19 +1,22 @@
 .header {
     grid-area: header;
+    box-sizing: border-box;
+    height: auto;
 
     &Wrapper {
         max-width: 217px;
+        // height: 100%;
         width: 100%;
-        margin: 50px;
+        margin: 30px;
         flex-shrink: 0;
-        display: flex;
-        flex-direction: column;
+        // display: flex;
+        // flex-direction: column;
         align-items: flex-start;
     }
 
     &Name {
         color: var(--color-text2);
-        font-size: 22px;
+        font-size: .9vw;
         font-style: normal;
         font-weight: 800;
         line-height: normal;
@@ -24,18 +27,19 @@
 
     &Title {
         color: var(--color-text3);
-        font-size: 30px;
+        font-size: 1.2vw;
         font-style: normal;
         font-weight: 800;
         line-height: normal;
         letter-spacing: 1.65px;
         white-space: nowrap;
         text-transform: uppercase;
+        text-align: left;
     }
 
     &Email {
         color: var(--color-text2);
-        font-size: 16px;
+        font-size: .7vw;
         font-style: normal;
         font-weight: 500;
         line-height: normal;

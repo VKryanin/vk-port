@@ -1,0 +1,40 @@
+.welcome {
+    max-width: 100%;
+    box-sizing: border-box;
+    text-align: justify;
+    flex-shrink: 1;
+    align-self: flex-start;
+    
+
+    &Text {
+        color: var(--color--main);
+        font-size: 3vw;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    &Green {
+        color: var(--bg);
+        text-shadow:
+            -.5px .5px 1px var(--color-text3),
+            .5px -.5px 1px var(--color-text3),
+            -.5px -.5px 1px var(--color-text3),
+            .5px -1px 1px var(--color-text3);
+        font-weight: 800;
+    }
+
+    &Grey {
+        color: var(--color-text2);
+        font-weight: 700;
+    }
+
+    &Black {
+        color: var(--bg);
+        text-shadow:
+            -.5px .5px 1px var(--color-text2),
+            .5px -.5px 1px var(--color-text2),
+            -.5px -.5px 1px var(--color-text2),
+            .5px -1px 1px var(--color-text2);
+    }
+}
