@@ -1,6 +1,7 @@
 .navbar {
     grid-area: navbar;
     border: 1px solid red;
+    max-height: 100%;
 
     &List {
         display: flex;

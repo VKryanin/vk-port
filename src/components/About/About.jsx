@@ -32,7 +32,8 @@ export const About = () => {
                 <h3 className={styles.aboutTitle}>About</h3>
                 <Welcome />
                 <p className={styles.aboutSubtitle}>
-                    I work as a frontend developer and have implemented a number of commercial and pet projects. I am open to new opportunities and challenges.
+                    I work as a frontend developer and have implemented a number of commercial and pet projects. 
+                    I am open to new opportunities and challenges.
                 </p>
             </div>
 
