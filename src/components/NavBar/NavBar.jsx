@@ -1,35 +1,43 @@
 import styles from './NavBar.module.scss';
 
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export const NavBar = () => {
     return (
         <nav className={styles.navbar}>
             <ul className={styles.navbarList}>
                 <li className={styles.navbarItem}>
-                    <Link className={styles.navbarLink}>
+                    <NavLink
+                        to={'/about'}
+                        // className={styles.navbarLink}
+                        className={({ isActive }) => `${styles.navbarLink} ${isActive ? styles.navbarLinkActive : ''}`}
+                    >
                         About
-                    </Link>
+                    </NavLink>
                 </li>
                 <li className={styles.navbarItem}>
-                    <Link className={styles.navbarLink}>
+                    <NavLink
+                        className={({ isActive }) => `${styles.navbarLink} ${isActive ? styles.navbarLinkActive : ''}`}
+                        to={'/education'}
+                    >
+                        Education
+                    </NavLink>
+                </li>
+                <li className={styles.navbarItem}>
+                    <NavLink
+                        className={({ isActive }) => `${styles.navbarLink} ${isActive ? styles.navbarLinkActive : ''}`}
+                        to={'/experience'}
+                    >
                         Experience
-                    </Link>
+                    </NavLink>
                 </li>
                 <li className={styles.navbarItem}>
-                    <Link className={styles.navbarLink}>
-                        Work
-                    </Link>
-                </li>
-                <li className={styles.navbarItem}>
-                    <Link className={styles.navbarLink}>
-                        Contact
-                    </Link>
-                </li>
-                <li className={styles.navbarItem}>
-                    <Link className={styles.navbarLink}>
+                    <NavLink
+                        className={({ isActive }) => `${styles.navbarLink} ${isActive ? styles.navbarLinkActive : ''}`}
+                        to={'/projects'}
+                    >
                         All projects
-                    </Link>
+                    </NavLink>
                 </li>
             </ul>
         </nav>

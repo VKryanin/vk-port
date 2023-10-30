@@ -1,0 +1,11 @@
+.contacts {
+    width: 100%;
+    max-width: 315px;
+    display: flex;
+    grid-template-columns: 65px 65px;
+    grid-template-rows: 65px 65px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 0 0 35px;
+    margin-top: auto;
+}

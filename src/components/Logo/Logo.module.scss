@@ -1,0 +1,63 @@
+.logo {
+    max-width: calc(350px - 60px);
+    width: 100%;
+    margin: 30px;
+    flex-shrink: 0;
+    align-items: flex-start;
+
+    &Name {
+        color: var(--color-text2);
+        font-size: .9vw;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        letter-spacing: 0.88px;
+        white-space: nowrap;
+        text-transform: uppercase;
+    }
+
+    &Title {
+        color: var(--color-text3);
+        font-size: 1.2vw;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        letter-spacing: 1.65px;
+        white-space: nowrap;
+        text-transform: uppercase;
+        text-align: left;
+    }
+
+    &Text {
+        color: var(--color--main);
+        font-size: 1.5vw;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    &Green {
+        color: var(--bg);
+        text-shadow:
+            -.5px .5px 1px var(--color-text3),
+            .5px -.5px 1px var(--color-text3),
+            -.5px -.5px 1px var(--color-text3),
+            .5px -1px 1px var(--color-text3);
+        font-weight: 800;
+    }
+
+    &Grey {
+        color: var(--color-text2);
+        font-weight: 700;
+    }
+
+    &Black {
+        color: var(--bg);
+        text-shadow:
+            -.5px .5px 1px var(--color-text2),
+            .5px -.5px 1px var(--color-text2),
+            -.5px -.5px 1px var(--color-text2),
+            .5px -1px 1px var(--color-text2);
+    }
+
+}
