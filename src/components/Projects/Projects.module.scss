@@ -1,0 +1,109 @@
+.projects {
+    margin: 80px 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: var(--color-text2);
+    font-size: 1.1vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: justify;
+
+    &Item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        padding: 25px;
+        margin-top: 25px;
+        border-radius: 5px;
+        cursor: pointer;
+        color: var(--color-text2);
+        transition: all .3s linear;
+
+        &:hover {
+            background-color: var(--bg--fon);
+            -webkit-box-shadow: 22px 14px 25px 6px rgba(47, 59, 84, 0.2);
+            -moz-box-shadow: 22px 14px 25px 6px rgba(47, 59, 84, 0.2);
+            box-shadow: 22px 14px 25px 6px rgba(47, 59, 84, 0.2);
+            color: var(--color-text2);
+
+            & img {
+                transform: scale(1.2);
+            }
+
+            & .projectsTitle {
+                color: var(--color-text3);
+
+                & svg {
+                    position: relative;
+                    top: -10%;
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+
+    &Wrapper {
+        width: 100% !important;
+        flex-grow: 1;
+        display: flex;
+    }
+
+    &Image {
+        max-width: 137.38px;
+        object-fit: contain;
+        margin-right: 45px;
+        transition:all .3s linear;
+        border-radius: 5px;
+    }
+
+    &Info {
+        width: 100%;
+        flex-grow: 1;
+    }
+
+
+    &Title {
+        position: relative;
+        display: inline-block;
+        width: 210px;
+        transition: all .3s linear;
+        color: var(--color--main);
+
+        & svg {
+            width: 15px;
+            transition: all .3s linear;
+        }
+    }
+
+    &Subtitles {
+        width: 100%;
+        flex-grow: 1;
+        color: var(--color-text2);
+        font-size: 1vw;
+        font-style: normal;
+        font-weight: 200;
+        line-height: 150%;
+        text-align: justify;
+    }
+
+    &Tech {
+        width: 100%;
+        display: flex;
+        // justify-content: space-between;
+        margin-top: 15px;
+        & li {
+            background-color: var(--bg--project);
+            text-align: center;
+            flex-wrap: wrap;
+            width: 90px;
+            border-radius: 15px;
+            color: var(--color-text3);
+            font-size: .8vw;
+            margin-right: 15px;
+        }
+    }
+}

@@ -1,18 +1,18 @@
 import { Link } from 'react-router-dom';
 import styles from './About.module.scss';
 
-export const About = () => {
+export const About = ({id}) => {
 
     return (
-        <section className={styles.about}>
+        <section id={id} className={styles.about}>
             <p className={styles.aboutText}>
                 In 2022, I decided to try my hand in IT.
                 I studied Java and Python, worked as a tester,
                 but I became completely engrossed in web development.
                 I created an <Link to="http://cocshop.ru/" target='_blank'>online store</Link> for a friend, successfully completed the "Web Developer"
                 training from <Link to="https://practicum.yandex.ru/frontend-developer/?from=catalog" target='_blank'>Yandex.Praktikum</Link>, and simultaneously learned frontend development
-                on <Link to="https://app.rs.school/" target='_blank'>RollingScopes</Link> online platform. I worked on the creation of a website for the
-                <Link to="https://tessera.hopto.org/" target='_blank'>"Roman Mosaic School"</Link> in Astana.
+                on <Link to="https://app.rs.school/" target='_blank'>RollingScopes</Link> online platform. I worked on the creation of a website for 
+                <Link to="https://tessera.hopto.org/" target='_blank'> "Roman Mosaic School"</Link> in Astana.
             </p>
             <p className={styles.aboutText}>
                 My main focus these days is to improve my skills and implement my existing skills.

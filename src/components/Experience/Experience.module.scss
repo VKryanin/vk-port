@@ -1,0 +1,82 @@
+.experience {
+    margin: 80px 30px;
+    // width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--color-text2);
+    font-size: 1.1vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: justify;
+
+    &Item {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 25px;
+        margin-top: 25px;
+        border-radius: 5px;
+        cursor: pointer;
+        color: var(--color-text2);
+
+        &:hover {
+            background-color: var(--bg--fon);
+            -webkit-box-shadow: 22px 14px 25px 6px rgba(47, 59, 84, 0.2);
+            -moz-box-shadow: 22px 14px 25px 6px rgba(47, 59, 84, 0.2);
+            box-shadow: 22px 14px 25px 6px rgba(47, 59, 84, 0.2);
+            color: var(--color-text2);
+
+            & .experienceLink {
+                color: var(--color-text3);
+
+                & svg {
+                    position: relative;
+                    top: -10%;
+                    transform: scale(1.2);
+                }
+            }
+        }
+
+        &.darken {
+            background-color: rgba(0, 0, 0, 0.1);
+            filter: blur(5px);
+            /* Измените цвет на нужный вам */
+        }
+
+    }
+
+    &Data {
+        margin-right: 45px;
+        font-weight: 100;
+        font-size: 1vw;
+    }
+
+    &Wrapper {
+        width: 100%;
+        flex-grow: 1;
+    }
+
+    &Link {
+        position: relative;
+        display: inline-block;
+        width: 210px;
+        transition: all .3s linear;
+        color: var(--color--main);
+
+        & svg {
+            width: 15px;
+        }
+    }
+
+    &Subtitle {
+        color: var(--color-text1);
+        font-size: 1vw;
+    }
+
+    &Text {
+        width: 100%;
+        font-size: 1.1vw;
+    }
+}

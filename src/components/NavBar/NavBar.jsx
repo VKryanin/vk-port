@@ -1,45 +1,102 @@
 import styles from './NavBar.module.scss';
 
-import { NavLink } from "react-router-dom";
+import React, { useState, useEffect, useLayoutEffect } from 'react';
+import { Link } from "react-scroll";
 
 export const NavBar = () => {
+    const [activeLink, setActiveLink] = useState('');
+    const [scrollPosition, setScrollPosition] = useState(0);
+    const handleScroll = () => {
+        const position = window.pageYOffset;
+        setScrollPosition(position);
+    };
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll, { passive: true });
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+    useLayoutEffect(() => {
+        const aboutSection = document.getElementById('about');
+        const educationSection = document.getElementById('education');
+        const experienceSection = document.getElementById('experience');
+        const projectsSection = document.getElementById('projects');
+
+        const position = scrollPosition + window.innerHeight / 2;
+
+        if (
+            position >= aboutSection.offsetTop &&
+            position < educationSection.offsetTop
+        ) {
+            setActiveLink('about');
+        } else if (
+            position >= educationSection.offsetTop &&
+            position < experienceSection.offsetTop
+        ) {
+            setActiveLink('education');
+        } else if (
+            position >= experienceSection.offsetTop &&
+            position < projectsSection.offsetTop
+        ) {
+            setActiveLink('experience');
+        } else if (position >= projectsSection.offsetTop) {
+            setActiveLink('projects');
+        } else {
+            setActiveLink('');
+        }
+    }, [scrollPosition]);
+
+
     return (
         <nav className={styles.navbar}>
             <ul className={styles.navbarList}>
                 <li className={styles.navbarItem}>
-                    <NavLink
-                        to={'/about'}
-                        // className={styles.navbarLink}
-                        className={({ isActive }) => `${styles.navbarLink} ${isActive ? styles.navbarLinkActive : ''}`}
+                    <Link
+                        to='about'
+                        smooth={true}
+                        duration={500}
+                        className={`${styles.navbarLink} ${activeLink === 'about' ? styles.navbarLinkActive : ''}`}
+                        activeClass={styles.navbarLinkActive}
                     >
                         About
-                    </NavLink>
+                    </Link>
                 </li>
                 <li className={styles.navbarItem}>
-                    <NavLink
-                        className={({ isActive }) => `${styles.navbarLink} ${isActive ? styles.navbarLinkActive : ''}`}
-                        to={'/education'}
+                    <Link
+                        to='education'
+                        smooth={true}
+                        duration={500}
+                        className={`${styles.navbarLink} ${activeLink === 'education' ? styles.navbarLinkActive : ''}`}
+                        activeClass={styles.navbarLinkActive}
                     >
                         Education
-                    </NavLink>
+                    </Link>
                 </li>
                 <li className={styles.navbarItem}>
-                    <NavLink
-                        className={({ isActive }) => `${styles.navbarLink} ${isActive ? styles.navbarLinkActive : ''}`}
-                        to={'/experience'}
+                    <Link
+                        to='experience'
+                        smooth={true}
+                        duration={500}
+                        className={`${styles.navbarLink} ${activeLink === 'experience' ? styles.navbarLinkActive : ''}`}
+                        activeClass={styles.navbarLinkActive}
                     >
                         Experience
-                    </NavLink>
+                    </Link>
                 </li>
                 <li className={styles.navbarItem}>
-                    <NavLink
-                        className={({ isActive }) => `${styles.navbarLink} ${isActive ? styles.navbarLinkActive : ''}`}
-                        to={'/projects'}
+                    <Link
+                        to='projects'
+                        smooth={true}
+                        duration={500}
+                        className={`${styles.navbarLink} ${activeLink === 'projects' ? styles.navbarLinkActive : ''}`}
+                        activeClass={styles.navbarLinkActive}
                     >
                         All projects
-                    </NavLink>
+                    </Link>
                 </li>
             </ul>
         </nav>
     )
+
 }
