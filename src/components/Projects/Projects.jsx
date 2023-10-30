@@ -3,14 +3,14 @@ import movies from '../../images/movies.jpg';
 import mesto from '../../images/mesto.jpg';
 import travel from '../../images/travel.jpg';
 import stuff from '../../images/stuff.jpg';
-import { Link } from 'react-scroll';
+import { Link } from 'react-router-dom';
 
 export const Projects = ({ id }) => {
     return (
         <section id={id} className={styles.projects}>
             <ul className={styles.projectsList}>
                 <li>
-                    <Link className={styles.projectsItem} to="https://vkryanin.github.io/russian-travel/" target='_blank'>
+                    <Link className={styles.projectsItem} to="https://653fc64cdbdf0a38a1b3084a--reliable-moonbeam-0828f2.netlify.app/categories/3" target='_blank'>
                         <div className={styles.projectsWrapper}>
                             <img className={styles.projectsImage} src={stuff} alt="Stuff" />
                             <div className={styles.projectsInfo}>
