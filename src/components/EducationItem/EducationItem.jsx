@@ -8,10 +8,10 @@ export const EducationItem = ({ name, profile, age, image }) => {
         if (isOpen) {
             document.body.style.overflow = 'hidden';
         } else {
-            document.body.style.overflow = 'auto';
+            document.body.style.overflow = 'visible';
         }
         return () => {
-            document.body.style.overflow = 'auto';
+            document.body.style.overflow = 'visible';
         };
     }, [isOpen]);
 
