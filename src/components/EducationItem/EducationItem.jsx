@@ -1,9 +1,19 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import styles from './EducationItem.module.scss';
 
 export const EducationItem = ({ name, profile, age, image }) => {
     const [isOpen, setIsOpen] = useState(false);
+    useEffect(() => {
+        if (isOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'auto';
+        }
+        return () => {
+            document.body.style.overflow = 'auto';
+        };
+    }, [isOpen]);
 
     const handleClick = () => {
         setIsOpen(!isOpen);
