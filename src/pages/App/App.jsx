@@ -7,7 +7,7 @@ export const App = () => {
   return (
     <div className={styles.app}>
       <Header />
-      <div />
+      <div className={styles.appContainer}/>
       <Main />
     </div>
   );

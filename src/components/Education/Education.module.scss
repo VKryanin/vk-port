@@ -11,29 +11,10 @@
     text-align: justify;
 
     &List {
+        position: relative;
         display: flex;
         flex-direction: column;
-    }
-
-    &Item {
-        width: 100%;
-        margin-top: 25px;
-        cursor: pointer;
-        padding: 25px;
-        border-radius: 5px;
-
-        & div {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        &:hover {
-            background-color: var(--bg--fon);
-
-            & .educationHeader {
-                color: var(--color-text3);
-            }
-        }
+        z-index: 1;
     }
 }
+

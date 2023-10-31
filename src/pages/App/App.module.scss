@@ -1,11 +1,9 @@
 .app {
     position: relative;
-    // max-height: 100vh;
-    // height: 100vh;
     display: flex;
     justify-content: space-between;
 
-    & div {
+    &Container {
         width: 40%;
     }
 }

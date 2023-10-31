@@ -1,3 +1,6 @@
+import yandex from '../images/yandex_page-0002.jpg';
+import rs from '../images/rs.jpg';
+
 export const EduEng = [
     {
         Name: 'Saint Petersburg College of Management and Commerce',
@@ -13,10 +16,12 @@ export const EduEng = [
         Name: 'RS School',
         Age: '2023',
         Profile: 'Front-end developer',
+        Image: rs,
     },
     {
         Name: 'Yandex.Practicum',
         Age: '2023',
         Profile: 'Web developer',
+        Image: yandex,
     }
 ]

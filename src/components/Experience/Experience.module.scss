@@ -1,6 +1,6 @@
 .experience {
+
     margin: 80px 30px;
-    // width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -48,9 +48,10 @@
     }
 
     &Data {
+        white-space: nowrap;
         margin-right: 45px;
         font-weight: 100;
-        font-size: 1vw;
+        font-size: .8vw;
     }
 
     &Wrapper {
