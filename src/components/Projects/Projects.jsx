@@ -10,7 +10,7 @@ export const Projects = ({ id }) => {
         <section id={id} className={styles.projects}>
             <ul className={styles.projectsList}>
                 <li>
-                    <Link className={styles.projectsItem} to="https://653fc64cdbdf0a38a1b3084a--reliable-moonbeam-0828f2.netlify.app/categories/3" target='_blank'>
+                    <Link className={styles.projectsItem} to="https://653fc64cdbdf0a38a1b3084a--reliable-moonbeam-0828f2.netlify.app/" target='_blank'>
                         <div className={styles.projectsWrapper}>
                             <img className={styles.projectsImage} src={stuff} alt="Stuff" />
                             <div className={styles.projectsInfo}>
