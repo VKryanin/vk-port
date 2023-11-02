@@ -1,9 +1,9 @@
-import styles from './NavBar.module.scss';
-
-import React, { useState, useEffect, useLayoutEffect } from 'react';
 import { Link } from "react-scroll";
+import React, { useState, useEffect, useLayoutEffect } from 'react';
 
-export const NavBar = () => {
+import styles from './BurgerMenu.module.scss';
+
+export const BurgerMenu = ({ status }) => {
     const [activeLink, setActiveLink] = useState('');
     const [scrollPosition, setScrollPosition] = useState(0);
     const handleScroll = () => {
@@ -46,49 +46,50 @@ export const NavBar = () => {
             setActiveLink('');
         }
     }, [scrollPosition]);
+
     return (
-        <nav className={styles.navbar}>
-            <ul className={styles.navbarList}>
-                <li className={styles.navbarItem}>
+        <nav className={status ? `${styles.burger} ${styles.burgerIsShow}` : styles.burger}>
+            <ul className={styles.burgerList}>
+                <li className={styles.burgerItem}>
                     <Link
                         to='about'
                         smooth={true}
                         duration={500}
-                        className={`${styles.navbarLink} ${activeLink === 'about' ? styles.navbarLinkActive : ''}`}
-                        activeClass={styles.navbarLinkActive}
+                        className={`${styles.burgerLink} ${activeLink === 'about' ? styles.burgerLinkActive : ''}`}
+                        activeClass={styles.burgerLinkActive}
                     >
                         About
                     </Link>
                 </li>
-                <li className={styles.navbarItem}>
+                <li className={styles.burgerItem}>
                     <Link
                         to='education'
                         smooth={true}
                         duration={500}
-                        className={`${styles.navbarLink} ${activeLink === 'education' ? styles.navbarLinkActive : ''}`}
-                        activeClass={styles.navbarLinkActive}
+                        className={`${styles.burgerLink} ${activeLink === 'education' ? styles.burgerLinkActive : ''}`}
+                        activeClass={styles.burgerLinkActive}
                     >
                         Education
                     </Link>
                 </li>
-                <li className={styles.navbarItem}>
+                <li className={styles.burgerItem}>
                     <Link
                         to='experience'
                         smooth={true}
                         duration={500}
-                        className={`${styles.navbarLink} ${activeLink === 'experience' ? styles.navbarLinkActive : ''}`}
-                        activeClass={styles.navbarLinkActive}
+                        className={`${styles.burgerLink} ${activeLink === 'experience' ? styles.burgerLinkActive : ''}`}
+                        activeClass={styles.burgerLinkActive}
                     >
                         Experience
                     </Link>
                 </li>
-                <li className={styles.navbarItem}>
+                <li className={styles.burgerItem}>
                     <Link
                         to='projects'
                         smooth={true}
                         duration={500}
-                        className={`${styles.navbarLink} ${activeLink === 'projects' ? styles.navbarLinkActive : ''}`}
-                        activeClass={styles.navbarLinkActive}
+                        className={`${styles.burgerLink} ${activeLink === 'projects' ? styles.burgerLinkActive : ''}`}
+                        activeClass={styles.burgerLinkActive}
                     >
                         All projects
                     </Link>
@@ -96,5 +97,4 @@ export const NavBar = () => {
             </ul>
         </nav>
     )
-
 }

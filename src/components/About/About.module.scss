@@ -7,6 +7,22 @@
     scroll-margin-top: 0;
     max-width: 600px;
 
+    &Title {
+        font-size: 20px;
+        text-align: left;
+        margin: 20px 0 30px;
+        color: var(--color-text3);
+    }
+
+    @media screen and (max-width:890px) {
+        & {
+            max-width: 100%;
+            width: 100%;
+            padding: 0;
+            margin: 25px auto 0;
+        }
+    }
+
     &Text {
         margin-bottom: 35px;
         color: var(--color-text2);
@@ -15,6 +31,14 @@
         font-weight: 400;
         line-height: 150%;
         text-align: justify;
+
+        @media screen and (max-width:890px) {
+            & {
+                max-width: 100%;
+                font-size: 16px;
+                text-align: justify;
+            }
+        }
 
         & span {
             font-size: 1.2vw;

@@ -9,6 +9,12 @@
     justify-content: flex-end;
     cursor: pointer;
 
+    @media screen and (max-width:890px) {
+        & {
+            display: none;
+        }
+    }
+
     &List {
         display: flex;
         flex-direction: column;

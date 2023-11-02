@@ -1,0 +1,27 @@
+.burger {
+    opacity: 0;
+    width: 100%;
+    margin: 15px;
+    transition: opacity .3s ease;
+
+    &IsShow {
+        opacity: 1;
+    }
+
+    &List {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        background-color: var(--bg--fon);
+        border-radius: 5px;
+        padding: 15px;
+    }
+
+    &Item {
+        margin-top: 15px;
+
+        &:first-of-type {
+            margin-top: 0;
+        }
+    }
+}

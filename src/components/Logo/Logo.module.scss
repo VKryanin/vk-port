@@ -5,6 +5,12 @@
     flex-shrink: 0;
     align-items: flex-start;
 
+    @media screen and (max-width:890px) {
+        & {
+            width: 100%;
+        }
+    }
+
     &Name {
         color: var(--color-text2);
         font-size: .9vw;
@@ -14,6 +20,13 @@
         letter-spacing: 0.88px;
         white-space: nowrap;
         text-transform: uppercase;
+
+        @media screen and (max-width:890px) {
+            & {
+                font-size: 48px;
+                text-transform: capitalize
+            }
+        }
     }
 
     &Title {
@@ -26,6 +39,12 @@
         white-space: nowrap;
         text-transform: uppercase;
         text-align: left;
+
+        @media screen and (max-width:890px) {
+            & {
+                font-size: 40px;
+            }
+        }
     }
 
     &Text {
@@ -34,6 +53,12 @@
         font-style: normal;
         font-weight: 500;
         line-height: normal;
+
+        @media screen and (max-width:890px) {
+            & {
+                font-size: 44px;
+            }
+        }
     }
 
     &Green {

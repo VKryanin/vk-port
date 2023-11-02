@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import styles from './Experience.module.scss';
@@ -10,8 +10,24 @@ export const Experience = ({ id }) => {
         setHoveredItem(index);
     }
 
+    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+    useEffect(() => {
+        const handleResize = () => {
+            const newScreenWidth = window.innerWidth;
+            setScreenWidth(newScreenWidth);
+        };
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, [])
+
+
     return (
         <section id={id} className={styles.experience}>
+            {screenWidth <= 890
+                ? <h2 className={styles.experienceTitle}>What about experience?</h2>
+                : <></>}
             <ul className={styles.experienceList}>
                 <li>
                     <Link

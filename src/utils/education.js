@@ -3,12 +3,12 @@ import rs from '../images/rs.jpg';
 
 export const EduEng = [
     {
-        Name: 'Saint Petersburg College of Management and Commerce',
+        Name: 'Saint Petersburg College of Management and\u00A0Commerce',
         Age: '2013',
-        Profile: ' Servicing computer equipment and computer networks',
+        Profile: 'Servicing computer equipment and\u00A0computer networks',
     },
     {
-        Name: 'Saint Petersburg State Technological Institute (Technical University)',
+        Name: 'Saint Petersburg State Technological Institute (Technical\u00A0University)',
         Age: '2018',
         Profile: 'Management, Logistics',
     },

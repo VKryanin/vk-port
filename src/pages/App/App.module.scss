@@ -3,7 +3,18 @@
     display: flex;
     justify-content: space-between;
 
+    @media screen and (max-width:890px) {
+        & {
+            flex-direction: column;
+        }
+
+        &Container {
+            display: none;
+        }
+    }
+
     &Container {
         width: 40%;
+
     }
 }
