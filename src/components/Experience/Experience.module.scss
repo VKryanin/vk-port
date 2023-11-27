@@ -10,21 +10,6 @@
     line-height: 150%;
     text-align: justify;
 
-    @media screen and (max-width:890px) {
-        & {
-            max-width: 100%;
-            margin: 25px auto 0;
-            padding: 0;
-        }
-
-        &Title {
-            font-size: 20px;
-            text-align: left;
-            margin: 20px 0 30px;
-            color: var(--color-text3);
-        }
-    }
-
     &Item {
         display: flex;
         justify-content: space-between;
@@ -56,7 +41,6 @@
         &.darken {
             background-color: rgba(0, 0, 0, 0.1);
             filter: blur(5px);
-            /* Измените цвет на нужный вам */
         }
 
     }
@@ -94,4 +78,30 @@
         width: 100%;
         font-size: 1.1vw;
     }
+
+    @media screen and (max-width:890px) {
+        & {
+            max-width: 100%;
+            margin: 25px auto 0;
+            padding: 0;
+        }
+
+        &Title {
+            font-size: 20px;
+            text-align: left;
+            margin: 20px 0 30px;
+            color: var(--color-text3);
+        }
+    }
+
+    @media screen and (max-width:860px) {
+        &Subtitle {
+            font-size: 12px;
+        }
+
+        &Text {
+            font-size: 14px;
+        }
+    }
+
 }

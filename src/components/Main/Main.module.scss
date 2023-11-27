@@ -13,11 +13,56 @@
             flex-direction: column;
             max-width: 100%;
             width: 100%;
-            margin: 30px auto ;
+            margin: 30px auto;
 
             & section {
                 flex-grow: 1;
-                width:100%;
+                width: 100%;
+            }
+        }
+    }
+
+    @media screen and (max-width:860px) {
+        & {
+            display: flex;
+            flex-direction: column;
+            max-width: 100%;
+            width: 100%;
+            margin: 30px auto;
+
+            & section {
+                flex-grow: 1;
+                max-width: 768px;
+            }
+        }
+    }
+
+    @media screen and (max-width:768px) {
+        & {
+            display: flex;
+            flex-direction: column;
+            max-width: 100%;
+            width: 100%;
+            margin: 30px auto;
+
+            & section {
+                flex-grow: 1;
+                max-width: 700px;
+            }
+        }
+    }
+
+    @media screen and (max-width:767px) {
+        & {
+            display: flex;
+            flex-direction: column;
+            max-width: 100%;
+            width: 100%;
+            margin: 30px auto;
+
+            & section {
+                flex-grow: 1;
+                max-width: 400px;
             }
         }
     }
