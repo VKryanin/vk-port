@@ -6,9 +6,7 @@ import styles from './Experience.module.scss';
 export const Experience = ({ id }) => {
     const [hoveredItem, setHoveredItem] = useState(null);
 
-    const handleItemHover = (index) => {
-        setHoveredItem(index);
-    }
+
 
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
     useEffect(() => {
@@ -21,6 +19,11 @@ export const Experience = ({ id }) => {
             window.removeEventListener('resize', handleResize);
         };
     }, [])
+
+    const handleItemHover = (index) => {
+        if (screenWidth <= 890) return
+        setHoveredItem(index);
+    }
 
 
     return (

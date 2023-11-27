@@ -123,6 +123,18 @@
             margin: 20px 0 30px;
             color: var(--color-text3);
         }
+
+        &Tech li {
+            background-color: transparent;
+            border: .5px solid var(--color-text3);
+            font-size: 7px;
+            width: 100%;
+            max-width: 100px;
+        }
+
+        &Tech li:last-of-type {
+            margin-right: 0;
+        }
     }
 
     @media screen and (max-width:860px) {
@@ -157,7 +169,27 @@
         }
 
         &Item:hover {
-            pointer-events: none;
+            &:hover {
+                background-color: transparent;
+                -webkit-box-shadow: none;
+                -moz-box-shadow: none;
+                box-shadow: none;
+                color: var(--color--main);
+
+                & img {
+                    transform: scale(1.2);
+                }
+
+                & .projectsTitle {
+                    color: var(--color--main);
+
+                    & svg {
+                        position: relative;
+                        top: -10%;
+                        transform: none;
+                    }
+                }
+            }
         }
 
         &Image {
@@ -175,15 +207,23 @@
             font-size: 10px;
         }
 
-        &Tech li {
-            border: .5px solid var(--color-text3);
-            font-size: 7px;
-            width: 100%;
-            max-width: 100px;
+        &Tech {
+            flex-wrap: wrap;
+            justify-content: space-between;
         }
 
-        &Tech li:last-of-type {
-            margin-right: 0;
+        &Tech li {
+            background-color: transparent;
+            border: .5px solid var(--color-text3);
+            font-size: 9px;
+            width: 100%;
+            padding: 3px;
+            max-width: 100px;
+            margin: 15px 15px 0 0;
+        }
+
+        &Tech li:nth-child(2n+1):last-child {
+            margin: 15px auto 0;
         }
     }
 }

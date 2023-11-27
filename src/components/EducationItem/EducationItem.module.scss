@@ -63,19 +63,17 @@
         width: 0;
         opacity: 0;
         transition: opacity .7s ease;
-        // display: none;
 
         .educationImageFull {
             transition: opacity .6s ease;
             opacity: 0;
             object-fit: cover;
-            // display: none;
         }
 
     }
 
     &WrapperIsOpen {
-        max-width: 600px;
+        max-width: 300px;
         width: 100%;
         z-index: 6;
         top: 50%;
@@ -93,8 +91,6 @@
         }
     }
 
-
-
     &Close {
         cursor: pointer;
         width: 35px;
@@ -105,6 +101,13 @@
         position: absolute;
         top: -8%;
         right: -8%;
+    }
+
+    @media screen and (max-width: 560px){
+        &Close {
+            right: -5px;
+            top: -40px;
+        }
     }
 
     &Overlay {
