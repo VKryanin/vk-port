@@ -2,6 +2,7 @@
     display: none;
     width: 150px;
 
+
     @media screen and (max-width: 890px) {
         & {
             display: flex;
@@ -43,6 +44,16 @@
             &::after {
                 transform: rotate(180deg);
             }
+        }
+
+        &Menu {
+            z-index: 0;
+        }
+    }
+
+    @media screen and (max-width: 560px){
+        & {
+            right: -25px;
         }
     }
 }

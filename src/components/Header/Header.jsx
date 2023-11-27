@@ -11,7 +11,6 @@ export const Header = () => {
             <Logo />
             <NavBar />
             <Contact />
-
             <Burger />
         </header>
     )

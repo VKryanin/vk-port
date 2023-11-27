@@ -104,4 +104,18 @@
         }
     }
 
+    @media screen and (max-width:560px) {
+        &Item {
+            padding: 14px;
+            background-color: var(--bg--fon);
+        }
+
+        &Data {
+            writing-mode: vertical-lr;
+            font-feature-settings: "clig" off, "liga" off;
+            font-size: 14px;
+            margin-right: 14px;
+        }
+    }
+
 }

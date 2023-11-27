@@ -3,9 +3,11 @@
     width: 100%;
     margin: 15px;
     transition: opacity .3s ease;
+    z-index: 0;
 
     &IsShow {
         opacity: 1;
+        z-index: 2;
     }
 
     &List {
@@ -15,6 +17,7 @@
         background-color: var(--bg--fon);
         border-radius: 5px;
         padding: 15px;
+        z-index: 0;
     }
 
     &Item {

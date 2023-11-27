@@ -14,7 +14,14 @@
             flex-grow: 1;
             max-width: 100%;
             width: 100%;
-            // width: 100%;
+        }
+    }
+
+    @media screen and (max-width:560px) {
+        & {
+            flex-grow: 1;
+            max-width: 300px;
+            margin: 0 auto;
         }
     }
 }

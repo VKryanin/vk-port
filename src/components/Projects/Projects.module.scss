@@ -53,6 +53,7 @@
         width: 100% !important;
         flex-grow: 1;
         display: flex;
+        background-size: contain;
     }
 
     &Image {
@@ -146,12 +147,24 @@
 
         }
 
+        &Wrapper {
+            background-color: rgb(17, 34, 64, .8);
+            background-blend-mode: multiply;
+        }
+
+        &Info {
+            padding: 5px;
+        }
+
         &Item:hover {
             pointer-events: none;
         }
 
         &Image {
             margin-right: 24px;
+            overflow: hidden;
+            width: 0;
+            margin: 0;
         }
 
         &Title {

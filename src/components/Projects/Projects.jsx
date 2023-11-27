@@ -31,7 +31,7 @@ export const Projects = ({ id }) => {
             <ul className={styles.projectsList}>
                 <li>
                     <Link className={styles.projectsItem} to="https://tessera.hopto.org/" target='_blank'>
-                        <div className={styles.projectsWrapper}>
+                        <div className={styles.projectsWrapper} style={screenWidth <= 560 ? { backgroundImage: `url(${roman})`, filter: 'brightness(70%) saturate(120%) #000' } : undefined}>
                             <img className={styles.projectsImage} src={roman} alt="Roman Mosaic School" />
                             <div className={styles.projectsInfo}>
                                 <h6 className={styles.projectsTitle}>Tessera
@@ -61,7 +61,7 @@ export const Projects = ({ id }) => {
                 </li>
                 <li>
                     <Link className={styles.projectsItem} to="https://653fc64cdbdf0a38a1b3084a--reliable-moonbeam-0828f2.netlify.app/" target='_blank'>
-                        <div className={styles.projectsWrapper}>
+                        <div className={styles.projectsWrapper} style={screenWidth <= 560 ? { backgroundImage: `url(${stuff})` } : undefined}>
                             <img className={styles.projectsImage} src={stuff} alt="Stuff" />
                             <div className={styles.projectsInfo}>
                                 <h6 className={styles.projectsTitle}>Stuff
@@ -90,7 +90,7 @@ export const Projects = ({ id }) => {
                 </li>
                 <li>
                     <Link className={styles.projectsItem} to="https://movies-explorer.nomoredomainsicu.ru/" target='_blank'>
-                        <div className={styles.projectsWrapper}>
+                        <div className={styles.projectsWrapper} style={screenWidth <= 560 ? { backgroundImage: `url(${movies})` } : undefined}>
                             <img className={styles.projectsImage} src={movies} alt="Movies" />
                             <div className={styles.projectsInfo}>
                                 <h6 className={styles.projectsTitle}>Movies-explorer
@@ -119,7 +119,7 @@ export const Projects = ({ id }) => {
                 </li>
                 <li>
                     <Link className={styles.projectsItem} to="https://vitaly.nomoredomains.work" target='_blank'>
-                        <div className={styles.projectsWrapper}>
+                        <div className={styles.projectsWrapper} style={screenWidth <= 560 ? { backgroundImage: `url(${mesto})` } : undefined}>
                             <img className={styles.projectsImage} src={mesto} alt="Mesto" />
                             <div className={styles.projectsInfo}>
                                 <h6 className={styles.projectsTitle}>Mesto react
@@ -147,7 +147,7 @@ export const Projects = ({ id }) => {
                 </li>
                 <li>
                     <Link className={styles.projectsItem} to="https://vkryanin.github.io/russian-travel/" target='_blank'>
-                        <div className={styles.projectsWrapper}>
+                        <div className={styles.projectsWrapper} style={screenWidth <= 560 ? { backgroundImage: `url(${travel})` } : undefined}>
                             <img className={styles.projectsImage} src={travel} alt="Traveling in Russia" />
                             <div className={styles.projectsInfo}>
                                 <h6 className={styles.projectsTitle}>Traveling in Russia

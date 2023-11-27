@@ -18,7 +18,12 @@
         width: 100%;
         height: 100%;
         object-fit: contain;
-        // fill: var(--dark-sea);
+    }
 
+    @media screen and (max-width:560px) {
+        & {
+            margin: 0;
+            z-index: 1;
+        }
     }
 }
