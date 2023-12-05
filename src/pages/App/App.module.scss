@@ -2,6 +2,28 @@
     position: relative;
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    box-sizing: border-box;
+
+    &Wrapper {
+        height: 100%;
+        /* Subtract the height of the Header and Aside components from 100vh */
+        overflow-y: scroll;
+    }
+
+    /* Общие стили для скролла */
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+
+
+    ::-webkit-scrollbar-thumb {
+        background-color: var(--color-text1);
+
+        border-radius: 4px;
+    }
 
     @media screen and (max-width:890px) {
         & {

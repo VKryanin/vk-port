@@ -23,18 +23,16 @@ export const EducationItem = ({ name, profile, age, image }) => {
         <>
             <li className={styles.educationItem}>
                 <h6 className={styles.educationItemHeader}>{name}</h6>
-                <div className={styles.educationItemAbout}>
-                    <p className={styles.educationItemProfile}>{profile}</p>
-                    <p className={styles.educationItemAge}>{age}</p>
-                </div>
-                {image && (
+                <p className={styles.educationItemProfile}>{profile}</p>
+                <p className={styles.educationItemAge}>{age}</p>
+                {/* {image && (
                     <img
                         className={styles.educationItemImage}
                         onClick={handleClick}
                         src={image}
                         alt="Diploma"
                     />
-                )}
+                )} */}
 
                 <div
                     className={isOpen ? `${styles.educationItemWrapper} ${styles.educationItemWrapperIsOpen}` : styles.educationItemWrapper}

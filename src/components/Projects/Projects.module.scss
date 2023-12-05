@@ -9,221 +9,146 @@
     font-weight: 400;
     line-height: 150%;
     text-align: justify;
+    overflow: hidden;
 
-    &List {
-        max-width: 100%;
+    &Header {
+        margin-bottom: 80px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
-    &Item {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 100%;
-        padding: 25px;
-        margin-top: 25px;
-        border-radius: 5px;
-        cursor: pointer;
-        color: var(--color-text2);
-        transition: all .3s linear;
+    &Name {
+        font-size: 70px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 76.5px;
+        color: var(--color--main);
 
-        &:hover {
-            background-color: var(--bg--fon);
-            -webkit-box-shadow: 22px 14px 25px 6px rgba(47, 59, 84, 0.2);
-            -moz-box-shadow: 22px 14px 25px 6px rgba(47, 59, 84, 0.2);
-            box-shadow: 22px 14px 25px 6px rgba(47, 59, 84, 0.2);
-            color: var(--color-text2);
-
-            & img {
-                transform: scale(1.2);
-            }
-
-            & .projectsTitle {
-                color: var(--color-text3);
-
-                & svg {
-                    position: relative;
-                    top: -10%;
-                    transform: scale(1.2);
-                }
-            }
+        & span {
+            color: var(--bg);
+            text-shadow:
+                -.5px .5px 1px var(--color-text3),
+                .5px -.5px 1px var(--color-text3),
+                -.5px -.5px 1px var(--color-text3),
+                .5px -1px 1px var(--color-text3);
+            font-weight: 800;
         }
+    }
+
+    &List {
+        border-top: 1px solid rgba(204, 214, 246, 0.20);
+        border-bottom: 1px solid rgba(204, 214, 246, 0.20);
     }
 
     &Wrapper {
-        width: 100% !important;
-        flex-grow: 1;
+        position: relative;
+        width: 2865px;
         display: flex;
-        background-size: contain;
-    }
-
-    &Image {
-        max-width: 137.38px;
-        object-fit: contain;
-        margin-right: 45px;
         transition: all .3s linear;
-        border-radius: 5px;
     }
 
-    &Info {
+    &Item {
+        box-sizing: border-box;
+        max-width: 573px;
+        height: 713px;
         width: 100%;
-        flex-grow: 1;
+        padding: 32px;
+    }
+
+    &Link {
+        width: 100%;
+        min-height: 100%;
+        max-width: 529px;
+        margin: 0 auto;
     }
 
     &Title {
-        position: relative;
-        display: inline-block;
-        width: 210px;
-        transition: all .3s linear;
-        color: var(--color--main);
-
-        & svg {
-            width: 15px;
-            transition: all .3s linear;
-        }
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 27px;
+        color: var(--color-text2);
+        margin: 0 0 30px 0;
     }
 
-    &Subtitles {
+    &ButtonDissable {
+        cursor:no-drop
+    }
+
+    &Container {
         width: 100%;
-        flex-grow: 1;
-        color: var(--color-text2);
-        font-size: 1vw;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding: 17px 11px;
+    }
+
+    &CornerLT,
+    &CornerLB,
+    &CornerRT,
+    &CornerRB {
+        position: absolute;
+        width: 9.5px;
+        height: 9.5px;
+        border-right: 1px solid rgba(239, 239, 229, 0.35);
+        border-bottom: 1px solid rgba(239, 239, 229, 0.35);
+    }
+
+    &CornerLT {
+        top: 0;
+        left: 0;
+    }
+
+    &CornerLB {
+        bottom: 0;
+        left: 0;
+        transform: rotate(-90deg);
+    }
+
+    &CornerRB {
+        bottom: 0;
+        right: 0;
+        transform: rotate(180deg);
+    }
+
+    &CornerRT {
+        top: 0;
+        right: 0;
+        transform: rotate(90deg);
+    }
+
+    &Image {
+        max-width: 480px;
+        max-height: 267px;
+        margin: 0 auto;
+        object-fit: contain;
+        align-self: center;
+    }
+
+    &Subtitle {
+        margin-top: 32px;
+        font-size: 20px;
         font-style: normal;
-        font-weight: 200;
-        line-height: 150%;
-        text-align: justify;
+        font-weight: 300;
+        line-height: 28px;
+        color: var(--color-text1);
+        min-height: 170px;
+    }
+
+    &Techs {
+        display: flex;
+        margin-top: 50px;
     }
 
     &Tech {
-        width: 100%;
-        display: flex;
-        margin-top: 15px;
-
-        & li {
-            background-color: var(--bg--project);
-            text-align: center;
-            flex-wrap: wrap;
-            width: 90px;
-            border-radius: 15px;
-            color: var(--color-text3);
-            font-size: .8vw;
-            margin-right: 15px;
-        }
-    }
-
-    @media screen and (max-width:890px) {
-        & {
-            max-width: 100%;
-            margin: 25px auto 0;
-            padding: 0;
-        }
-
-        &Header {
-            font-size: 20px;
-            text-align: left;
-            margin: 20px 0 30px;
-            color: var(--color-text3);
-        }
-
-        &Tech li {
-            background-color: transparent;
-            border: .5px solid var(--color-text3);
-            font-size: 7px;
-            width: 100%;
-            max-width: 100px;
-        }
-
-        &Tech li:last-of-type {
-            margin-right: 0;
-        }
-    }
-
-    @media screen and (max-width:860px) {
-        &Title {
-            font-size: 16px;
-        }
-
-        &Subtitles {
-            font-size: 14px;
-        }
-    }
-
-    @media screen and (max-width:560px) {
-
-        &List li {
-            background-color: var(--bg--fon);
-            border-radius: 5px;
-        }
-
-        &Item {
-            padding: 15px;
-
-        }
-
-        &Wrapper {
-            background-color: rgb(17, 34, 64, .8);
-            background-blend-mode: multiply;
-        }
-
-        &Info {
-            padding: 5px;
-        }
-
-        &Item:hover {
-            &:hover {
-                background-color: transparent;
-                -webkit-box-shadow: none;
-                -moz-box-shadow: none;
-                box-shadow: none;
-                color: var(--color--main);
-
-                & img {
-                    transform: scale(1.2);
-                }
-
-                & .projectsTitle {
-                    color: var(--color--main);
-
-                    & svg {
-                        position: relative;
-                        top: -10%;
-                        transform: none;
-                    }
-                }
-            }
-        }
-
-        &Image {
-            margin-right: 24px;
-            overflow: hidden;
-            width: 0;
-            margin: 0;
-        }
-
-        &Title {
-            font-size: 12px;
-        }
-
-        &Subtitles {
-            font-size: 10px;
-        }
-
-        &Tech {
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
-        &Tech li {
-            background-color: transparent;
-            border: .5px solid var(--color-text3);
-            font-size: 9px;
-            width: 100%;
-            padding: 3px;
-            max-width: 100px;
-            margin: 15px 15px 0 0;
-        }
-
-        &Tech li:nth-child(2n+1):last-child {
-            margin: 15px auto 0;
-        }
+        padding: 11.3px;
+        border: 1px solid rgba(204, 214, 246, 0.20);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 17.5px;
+        color: #CCD6F6;
     }
 }

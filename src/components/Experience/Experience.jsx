@@ -28,9 +28,7 @@ export const Experience = ({ id }) => {
 
     return (
         <section id={id} className={styles.experience}>
-            {screenWidth <= 890
-                ? <h2 className={styles.experienceTitle}>What about experience?</h2>
-                : <></>}
+            <h5 className={styles.experienceTitle}>My <span>experience</span></h5>
             <ul className={styles.experienceList}>
                 <li>
                     <Link

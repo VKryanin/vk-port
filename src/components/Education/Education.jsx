@@ -9,7 +9,8 @@ export const Education = ({ id }) => {
 
     return (
         <section id={id} className={styles.education}>
-            <h5 className={styles.educationTitle}>A little bit about my education</h5>
+            <h5 className={styles.educationTitle}>A little bit <span className={styles.educationGreen}>about</span> </h5>
+            <h5 className={styles.educationTitle}>my <span className={styles.educationGrey}>education</span></h5>
             <ul className={styles.educationList}>
                 {EduEng.map(({ Name, Age, Profile, Image }, index) => (
                     <EducationItem
