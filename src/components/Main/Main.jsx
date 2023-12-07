@@ -1,5 +1,5 @@
 import styles from './Main.module.scss';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { Element } from 'react-scroll';
 
 import { About } from '../About/About';
@@ -8,7 +8,7 @@ import { Experience } from '../Experience/Experience';
 import { Projects } from '../Projects/Projects';
 import { Footer } from '../Footer/Footer';
 
-export const Main = ({ setActiveLink }) => {
+export const Main = ({ setActiveLink, activeLink }) => {
 
     const handleScroll = () => {
         const aboutElement = document.getElementById('about');
@@ -40,13 +40,13 @@ export const Main = ({ setActiveLink }) => {
         }
     };
 
-    useEffect(() => {
-        window.addEventListener('scroll', handleScroll);
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
-
+    // useEffect(() => {
+    //     window.addEventListener('scroll', handleScroll);
+    //     return () => {
+    //         window.removeEventListener('scroll', handleScroll);
+    //     };
+    //     // eslint-disable-next-line react-hooks/exhaustive-deps
+    // }, [activeLink]);
 
     return (
         <section className={styles.main} id='main'>

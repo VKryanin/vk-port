@@ -1,15 +1,15 @@
 .aside {
   display: flex;
   flex-direction: column;
-  width: 204px;
+  // margin: 0 auto;
+  width: 100%;
   max-width: 204px;
   height: 100vh;
   position: relative;
   border-left: 1px solid var(--color-text2);
 
   &Wrapper {
-    // position: fixed;
-    // transform: rotate(50%, -50%);
-    right: 65px;
+    width: 100%;
+    margin: 0 auto;
   }
 }

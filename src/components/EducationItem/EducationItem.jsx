@@ -25,15 +25,6 @@ export const EducationItem = ({ name, profile, age, image }) => {
                 <h6 className={styles.educationItemHeader}>{name}</h6>
                 <p className={styles.educationItemProfile}>{profile}</p>
                 <p className={styles.educationItemAge}>{age}</p>
-                {/* {image && (
-                    <img
-                        className={styles.educationItemImage}
-                        onClick={handleClick}
-                        src={image}
-                        alt="Diploma"
-                    />
-                )} */}
-
                 <div
                     className={isOpen ? `${styles.educationItemWrapper} ${styles.educationItemWrapperIsOpen}` : styles.educationItemWrapper}
                 >

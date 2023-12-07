@@ -12,10 +12,10 @@ export const App = () => {
     <div className={styles.app}>
       <CursorGradient />
       <Header />
-      <div className={styles.appWrapper} id='app'>
-        <Main setActiveLink={setActiveLink} />
-      </div>
-      <Aside activeLink={activeLink} />
+      {/* <div className={styles.appWrapper}> */}
+      <Main setActiveLink={setActiveLink} activeLink={activeLink} />
+      {/* </div> */}
+      <Aside activeLink={activeLink} setActiveLink={setActiveLink} />
     </div>
   );
 }
