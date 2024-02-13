@@ -1,174 +1,152 @@
 .projects {
-    margin: 80px auto;
+  // box-sizing: border-box;
+  // overflow: hidden;
+  height: 450px;
+  width: 100%;
+  max-width: 1146px;
+  margin: 100px 0 0;
+  padding: 0 40px;
+
+  &Header {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    color: var(--color-text2);
-    font-size: 1.1vw;
+    align-items: center;
+    width: 100%;
+  }
+
+  &Title {
+    font-size: 4vw;
+    font-weight: 500;
+    line-height: 100%;
     font-style: normal;
-    font-weight: 400;
-    line-height: 150%;
-    text-align: justify;
+    margin-bottom: 16px;
+
+    & span {
+      color: var(--bg);
+      text-shadow:
+        -.5px .5px 1px var(--color-text3),
+        .5px -.5px 1px var(--color-text3),
+        -.5px -.5px 1px var(--color-text3),
+        .5px -1px 1px var(--color-text3);
+      font-weight: 800;
+    }
+  }
+
+  &Buttons {
+    display: flex;
+    justify-content: space-between;
+    max-width: 150px;
+    width: 100%;
+  }
+
+  &Button {
+    border: none;
+    padding: 0;
+    display: flex;
+
+
+    &:first-of-type {
+      transform: rotate(180deg);
+    }
+  }
+
+  &Wrapper {
     overflow: hidden;
+    width: 100%;
+    max-width: 1146px;
+    display: flex;
+    position: relative;
+    flex-shrink: 0;
+  }
 
-    &Header {
-        margin-bottom: 80px;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+  &Item {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    margin-top: 70px;
+    padding: 8px;
+    transition: all .3s linear;
+    border-radius: 5px;
+
+    &:hover {
+      background-color: var(--bg--fon);
+      -webkit-box-shadow: 22px 14px 25px 6px rgba(47, 59, 84, 0.2);
+      -moz-box-shadow: 22px 14px 25px 6px rgba(47, 59, 84, 0.2);
+      box-shadow: 22px 14px 25px 6px rgba(47, 59, 84, 0.2);
+
+      & .projectsName {
+        color: var(--color-text3);
+      }
+    }
+  }
+
+  &ItemActive {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &ItemInactive {
+    display: none;
+  }
+
+  &Name {
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28px;
+  }
+
+  &Container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+    max-width: 100%;
+    box-sizing: border-box;
+
+    & div {
+      display: flex;
+      flex-direction: column;
+
     }
 
-    &Name {
-        font-size: 3.6vw;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 76.5px;
-        color: var(--color--main);
-
-        & span {
-            color: var(--bg);
-            text-shadow:
-                -.5px .5px 1px var(--color-text3),
-                .5px -.5px 1px var(--color-text3),
-                -.5px -.5px 1px var(--color-text3),
-                .5px -1px 1px var(--color-text3);
-            font-weight: 800;
-        }
+    & ul {
+      padding: 0;
+      display: flex;
+      justify-content: flex-start;
+      margin-top: 14px;
     }
 
-    &List {
-        border-top: 1px solid rgba(204, 214, 246, 0.20);
-        border-bottom: 1px solid rgba(204, 214, 246, 0.20);
-        max-width: 100%;
-        overflow: hidden;
+    & li {
+      border: 1px solid rgba(204, 214, 246, 0.20);
+      padding: 15px;
+      border-radius: 5px;
+      max-width: 112px;
+      text-align: center;
+      margin-right: 16px;
+      font-size: 1vw;
+      color: var(--color-text1);
     }
 
-    &Wrapper {
-        position: relative;
-        width: 2865px;
-        display: flex;
-        transition: all .3s linear;
+    & li:last-of-type {
+      margin-right: 0;
     }
+  }
 
-    &Item {
-        box-sizing: border-box;
-        width: 100%;
-        max-width: 573px;
-        height: 713px;
-        padding: 32px;
-    }
+  &Image {
+    width: 50%;
+    max-width: 500px;
+    object-fit: contain;
+    border-radius: 5px;
+    margin-right: 16px;
+  }
 
-    &Link {
-        width: 100%;
-        max-width: 529px;
-        min-height: 100%;
-        margin: 0 auto;
-    }
-
-    &Title {
-        font-size: 2.1vw;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 27px;
-        color: var(--color-text2);
-        margin: 0 0 30px 0;
-    }
-
-    &Buttons {
-        width: 100%;
-        max-width: 150px;
-        display: flex;
-        justify-content: space-between;
-        // gap: 20px;
-    }
-
-    &Button {
-        max-width: 65px;
-        width: 100%;
-        padding: 0;
-    }
-
-    &ButtonDissable {
-        cursor: no-drop;
-        max-width: 65px;
-        width: 100%;
-        padding: 0;
-    }
-
-    &Container {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        padding: 17px 11px;
-    }
-
-    &CornerLT,
-    &CornerLB,
-    &CornerRT,
-    &CornerRB {
-        position: absolute;
-        width: 9.5px;
-        height: 9.5px;
-        border-right: 1px solid rgba(239, 239, 229, 0.35);
-        border-bottom: 1px solid rgba(239, 239, 229, 0.35);
-    }
-
-    &CornerLT {
-        top: 0;
-        left: 0;
-    }
-
-    &CornerLB {
-        bottom: 0;
-        left: 0;
-        transform: rotate(-90deg);
-    }
-
-    &CornerRB {
-        bottom: 0;
-        right: 0;
-        transform: rotate(180deg);
-    }
-
-    &CornerRT {
-        top: 0;
-        right: 0;
-        transform: rotate(90deg);
-    }
-
-    &Image {
-        max-width: 480px;
-        width: 100%;
-        object-fit: cover;
-        max-height: 267px;
-        margin: 0 auto;
-        align-self: center;
-    }
-
-    &Subtitle {
-        margin-top: 32px;
-        font-size: 1vw;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 28px;
-        color: var(--color-text1);
-        min-height: 170px;
-    }
-
-    &Techs {
-        display: flex;
-        margin-top: 50px;
-    }
-
-    &Tech {
-        padding: 11.3px;
-        border: 1px solid rgba(204, 214, 246, 0.20);
-        font-size: .8vw;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 17.5px;
-        color: #CCD6F6;
-    }
+  &Subtitle {
+    color: var(--color-text2);
+    font-size: 1vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28px;
+    text-align: justify;
+  }
 }

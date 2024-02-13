@@ -1,56 +1,76 @@
-import React from 'react';
-import { Link } from 'react-scroll';
+import React, { useEffect, useState } from 'react';
+import { Link, Element, scroller } from 'react-scroll';
 import styles from './NavBar.module.scss';
 
-export const NavBar = ({ activeLink, setActiveLink }) => {
+export const NavBar = () => {
+    const [activeLink, setActiveLink] = useState('about');
+
+    const handleSetActive = (to) => {
+        setActiveLink(to);
+    };
+
+    useEffect(() => {
+        const scrollOffset = -100; 
+        scroller.register('begin', (to, element) => {
+        });
+
+        scroller.register('end', (to, element) => {
+            setActiveLink(to);
+        });
+
+        return () => {
+            scroller.unregister('begin');
+            scroller.unregister('end');
+        };
+    }, []);
 
     return (
         <nav className={styles.navbar}>
             <ul className={styles.navbarList}>
                 <li className={styles.navbarItem}>
                     <Link
+                        activeClass={styles.navbarLinkActive}
                         to="about"
+                        spy={true}
                         smooth={true}
                         duration={500}
-                        className={`${styles.navbarLink} ${activeLink === 'about' ? styles.navbarLinkActive : ''
-                            }`}
-                        onClick={() => setActiveLink('about')}
+                        onSetActive={handleSetActive}
                     >
                         About
                     </Link>
                 </li>
                 <li className={styles.navbarItem}>
                     <Link
+                        activeClass={styles.navbarLinkActive}
                         to="education"
+                        spy={true}
                         smooth={true}
                         duration={500}
-                        className={`${styles.navbarLink} ${activeLink === 'education' ? styles.navbarLinkActive : ''
-                            }`}
-                        onClick={() => setActiveLink('education')}
+                        onSetActive={handleSetActive}
                     >
                         Education
                     </Link>
                 </li>
                 <li className={styles.navbarItem}>
                     <Link
+                        activeClass={styles.navbarLinkActive}
                         to="experience"
+                        spy={true}
                         smooth={true}
                         duration={500}
-                        className={`${styles.navbarLink} ${activeLink === 'experience' ? styles.navbarLinkActive : ''
-                            }`}
-                        onClick={() => setActiveLink('experience')}
+                        onSetActive={handleSetActive}
                     >
                         Experience
                     </Link>
                 </li>
                 <li className={styles.navbarItem}>
                     <Link
+                        activeClass={styles.navbarLinkActive}
                         to="projects"
+                        spy={true}
                         smooth={true}
                         duration={500}
-                        className={`${styles.navbarLink} ${activeLink === 'projects' ? styles.navbarLinkActive : ''
-                            }`}
-                        onClick={() => setActiveLink('projects')}
+                        onSetActive={handleSetActive}
                     >
                         All projects
                     </Link>
