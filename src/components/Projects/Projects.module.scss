@@ -1,6 +1,4 @@
 .projects {
-  // box-sizing: border-box;
-  // overflow: hidden;
   height: 450px;
   width: 100%;
   max-width: 1146px;
@@ -43,10 +41,19 @@
     border: none;
     padding: 0;
     display: flex;
+    transition: all .3s linear;
 
 
     &:first-of-type {
       transform: rotate(180deg);
+    }
+
+    &Dissable:hover {
+      cursor: not-allowed;
+    }
+
+    &Dissable path {
+      opacity: .3;
     }
   }
 
