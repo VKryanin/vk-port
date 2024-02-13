@@ -14,7 +14,7 @@
     text-align: justify;
 
     &Title {
-        font-size: 70px;
+        font-size: 4.2vw;
         color: var(--color--main);
         font-style: normal;
         font-weight: 500;
@@ -134,6 +134,16 @@
         font-style: normal;
         font-weight: 300;
         line-height: normal
+    }
+
+    @media screen and (max-width:1235px) {
+        &Data {
+            padding: 10px 26px;
+        }
+
+        &Wrapper {
+            margin-top: 0;
+        }
     }
 
     @media screen and (max-width:890px) {

@@ -1,6 +1,5 @@
 .logo {
     max-width: calc(350px - 60px);
-    // width: 100%;
     margin: 50px 50px 30px;
     flex-shrink: 0;
     align-items: flex-start;
@@ -17,7 +16,7 @@
 
         @media screen and (max-width:890px) {
             & {
-                font-size: 48px;
+                font-size: 28px;
                 text-transform: capitalize
             }
         }
@@ -36,7 +35,7 @@
 
         @media screen and (max-width:890px) {
             & {
-                font-size: 40px;
+                font-size: 32px;
             }
         }
     }
@@ -85,11 +84,18 @@
         font-weight: 500;
         line-height: normal;
         letter-spacing: 2px;
+
+        @media screen and (max-width:890px) {
+            & {
+                font-size: 17.5px;
+            }
+        }
     }
 
     @media screen and (max-width:890px) {
         & {
             width: 100%;
+            margin: 25px;
         }
     }
 

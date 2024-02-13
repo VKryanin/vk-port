@@ -131,7 +131,7 @@
       max-width: 112px;
       text-align: center;
       margin-right: 16px;
-      font-size: 1vw;
+      font-size: .8vw;
       color: var(--color-text1);
     }
 
@@ -155,5 +155,29 @@
     font-weight: 300;
     line-height: 28px;
     text-align: justify;
+  }
+
+  @media screen and (max-width:1235px) {
+    &Image {
+      max-width: 40%;
+    }
+  }
+
+  @media screen and (max-width:1024px) {
+    &Item {
+      height: 250px;
+    }
+
+    &Image {
+      display: none;
+    }
+
+    &Container {
+      height: 100%;
+
+      & div {
+        justify-content: space-between;
+      }
+    }
   }
 }
