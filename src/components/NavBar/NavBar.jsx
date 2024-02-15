@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Link, Element, scroller } from 'react-scroll';
+import { Link, scroller } from 'react-scroll';
 import styles from './NavBar.module.scss';
 
 export const NavBar = () => {

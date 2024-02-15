@@ -20,9 +20,6 @@
         min-width: 250px;
     }
 
-    &Burger {
-        display: none;
-    }
 
     @media screen and (max-width:890px) {
         & {
@@ -39,57 +36,6 @@
 
         &WrapperImage {
             display: none;
-        }
-
-        &Burger {
-            display: block;
-            position: relative;
-            height: 1px;
-            width: 15px;
-            border-bottom: 1px solid var(--color-text2);
-            margin: 30px;
-
-            &:after {
-                content: '';
-                height: 1px;
-                width: 15px;
-                border-bottom: 1px solid var(--color-text2);
-                position: absolute;
-                bottom: 4px;
-            }
-
-            &:before {
-                content: '';
-                height: 1px;
-                width: 15px;
-                border-bottom: 1px solid var(--color-text2);
-                position: absolute;
-                top: 4px;
-            }
-        }
-
-        &BurgerActive {
-            border-bottom: transparent;
-
-            &:after {
-                content: '';
-                height: 1px;
-                width: 15px;
-                border-bottom: 1px solid var(--color-text2);
-                position: absolute;
-                top: 0;
-                transform: rotate(130deg)
-            }
-
-            &:before {
-                content: '';
-                height: 1px;
-                width: 15px;
-                border-bottom: 1px solid var(--color-text2);
-                position: absolute;
-                bottom: 0;
-                transform: rotate(-130deg)
-            }
         }
     }
 
