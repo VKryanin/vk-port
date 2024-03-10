@@ -114,6 +114,7 @@
     & div {
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
     }
 
     & ul {
@@ -236,6 +237,25 @@
   @media screen and (min-width:3420px) {
     & {
       max-width: 2280px;
+    }
+
+    &Image {
+      max-width: 800px;
+      max-height: 450px;
+    }
+
+    &Container div {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &Container li {
+      max-width: 250px;
+    }
+
+    &Subtitle {
+      font-size: 39px;
+      line-height: 52px;
     }
   }
 }

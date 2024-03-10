@@ -1,7 +1,7 @@
 .footer {
   width: 100%;
   max-width: 1146px;
-  margin: 300px 0 24px;
+  margin: 250px 0 24px;
   padding: 0 40px;
   display: flex;
   justify-content: space-between;
@@ -81,6 +81,21 @@
   @media screen and (min-width:1920px) {
     & {
       max-width: 1580px;
+    }
+  }
+
+  @media screen and (min-width:3420px) {
+    & {
+      margin-top: 400px;
+      max-width: 2280px;
+    }
+
+    &Title {
+      line-height: 130.5px;
+    }
+
+    &Arr {
+      max-width: 1200px;
     }
   }
 }

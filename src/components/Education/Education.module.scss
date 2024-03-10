@@ -83,11 +83,19 @@
         & {
             max-width: 1580px;
         }
+
+        &Title {
+            line-height: 100.5px;
+        }
     }
 
     @media screen and (min-width:3420px) {
         & {
             max-width: 2280px;
+        }
+
+        &Title {
+            line-height: 130.5px;
         }
     }
 }
