@@ -12,8 +12,10 @@ export const Burger = () => {
     return (
         <div className={styles.burger} >
             <div
-                className={!Open ? styles.burgerArray : `${styles.burgerArray} ${styles.burgerCross}`}
-                onClick={()=>handleClick(!Open)}
+                className={!Open
+                    ? styles.burgerArray
+                    : `${styles.burgerArray} ${styles.burgerCross}`}
+                onClick={() => handleClick(!Open)}
             />
             {<BurgerMenu status={Open} setOpen={setOpen} />}
         </div>
