@@ -66,13 +66,21 @@
 
   @media screen and (max-width:430px) {
     & {
-        flex-grow: 1;
-        max-width: 400px;
-        margin: 25px auto 0;
+      flex-grow: 1;
+      max-width: 400px;
+      margin: 25px auto 0;
     }
 
-    &Text, &Email, &Copy {
+    &Text,
+    &Email,
+    &Copy {
       font-size: 10px;
     }
-}
+  }
+
+  @media screen and (min-width:1920px) {
+    & {
+      max-width: 1580px;
+    }
+  }
 }

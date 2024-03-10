@@ -7,7 +7,7 @@ import { Experience } from '../Experience/Experience';
 import { Projects } from '../Projects/Projects';
 import { Footer } from '../Footer/Footer';
 
-export const Main = ({ setActiveLink, activeLink }) => {
+export const Main = () => {
 
     return (
         <section className={styles.main} id='main'>
