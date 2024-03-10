@@ -53,4 +53,10 @@
             margin: 0 auto;
         }
     }
+
+    @media screen and (min-width:3420px) {
+        & {
+            max-width: 750px;
+        }
+    }
 }
