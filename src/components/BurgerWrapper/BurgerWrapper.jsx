@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState, useRef } from 'react'
 import { MenuButton } from '../MenuButton/MenuButton'
 import styles from './BurgerWrapper.module.scss'
 import { NavBurger } from '../NavBurger/NavBurger'

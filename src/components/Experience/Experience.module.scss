@@ -155,7 +155,7 @@
 
         &Title {
             text-align: left;
-            margin: 20px 0 30px;
+            margin: 20px 0 0px;
             color: var(--color-text3);
         }
     }
@@ -170,17 +170,44 @@
         }
     }
 
-    @media screen and (max-width:560px) {
+    @media screen and (max-width:430px) {
+        & {
+            flex-grow: 1;
+            max-width: 400px;
+            margin: 0 auto;
+
+            display: flex;
+        }
+
         &Item {
-            padding: 14px;
-            background-color: var(--bg--fon);
+            padding: 0;
+        }
+
+        &Title {
+            font-size: 25px;
         }
 
         &Data {
+            position: relative;
             writing-mode: vertical-lr;
-            font-feature-settings: "clig" off, "liga" off;
-            font-size: 14px;
-            margin-right: 14px;
+            padding: 10px;
+            margin: 0;
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &Wrapper {
+            padding: 5px;
+        }
+
+        &Link {
+            font-size: 15px;
+        }
+
+        &Text {
+            text-align: justify;
         }
     }
 }

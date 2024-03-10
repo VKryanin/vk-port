@@ -197,4 +197,29 @@
       background-color: var(--bg--fon);
     }
   }
+
+  @media screen and (max-width:430px) {
+    & {
+      max-width: 400px;
+      margin: 20px auto 0;
+      padding: 0;
+    }
+
+    &Header {
+      margin: 20px 0 0px;
+    }
+
+    &Title {
+      font-size: 25px;
+    }
+
+    &Subtitle {
+      font-size: 12px;
+    }
+
+    &Container li {
+      font-size: 10px;
+    }
+
+  }
 }

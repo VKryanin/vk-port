@@ -67,7 +67,7 @@ export const Projects = ({ id }) => {
     };
 
     return (
-        <section id={id} className={styles.projects}>
+        <div id={id} className={styles.projects}>
             <div className={styles.projectsHeader}>
                 <h5 className={styles.projectsTitle}>My <span>projects</span></h5>
                 <div className={styles.projectsButtons}>
@@ -107,6 +107,6 @@ export const Projects = ({ id }) => {
                     </Link>
                 )}
             </div>
-        </section>
+        </div>
     );
 };

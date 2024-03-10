@@ -65,4 +65,17 @@
             width: 100%;
         }
     }
+
+    @media screen and (max-width:430px) {
+        & {
+            max-width: 400px;
+            margin: 15px auto 0;
+            width: 100%;
+            padding: 0;
+        }
+
+        &Title {
+            font-size: 25px;
+        }
+    }
 }
