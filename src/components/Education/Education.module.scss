@@ -79,6 +79,19 @@
         }
     }
 
+    @media screen and (max-width:390px) {
+        & {
+            max-width: 370px;
+            margin: 15px auto 0;
+            width: 100%;
+            padding: 0;
+        }
+
+        &Title {
+            font-size: 23px;
+        }
+    }
+
     @media screen and (min-width:1920px) {
         & {
             max-width: 1580px;

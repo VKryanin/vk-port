@@ -137,4 +137,26 @@
         }
     }
 
+    @media screen and (max-width:390px) {
+        & {
+            max-width: 200px;
+        }
+
+        &Name {
+            font-size: 22px;
+        }
+
+        &Title {
+            font-size: 25.5px;
+        }
+
+        &Text {
+            font-size: 20px;
+        }
+
+        &Email {
+            font-size: 13px;
+        }
+    }
+
 }

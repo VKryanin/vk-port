@@ -119,4 +119,11 @@
             max-width: 2280px;
         }
     }
+
+    @media screen and (max-width:390px) {
+        & {
+            max-width: 370px;
+            margin: 0 auto;
+        }
+    }
 }

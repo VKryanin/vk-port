@@ -78,6 +78,17 @@
     }
   }
 
+  @media screen and (max-width:390px) {
+    & {
+        max-width: 370px;
+        margin: 25px auto 0;
+    }
+
+    &Copy {
+      font-size: 8px;
+    }
+}
+
   @media screen and (min-width:1920px) {
     & {
       max-width: 1580px;
