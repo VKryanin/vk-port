@@ -6,7 +6,7 @@ import styles from './About.module.scss';
 export const About = ({ id }) => {
 
     return (
-        <section id={id} className={styles.about}>
+        <div id={id} className={styles.about}>
             <h3 className={styles.aboutTitle}>
                 <span className={styles.aboutGreen}>
                     Bringing</span>&nbsp;ideas
@@ -33,6 +33,6 @@ export const About = ({ id }) => {
                 When I'm not at the computer, I usually enjoy going to the gym,
                 playing board games, or watching how a pirate searches for <span>One Piece</span>.
             </p>
-        </section>
+        </div >
     )
 }

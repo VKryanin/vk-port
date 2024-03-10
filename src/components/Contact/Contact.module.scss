@@ -21,6 +21,15 @@
         max-width: 65px;
     }
 
+    @media screen and (max-width:890px) {
+        & {
+            max-width: 800px;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
     @media screen and (max-width:560px) {
         & {
             margin: 0;

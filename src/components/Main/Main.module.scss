@@ -13,22 +13,16 @@
     flex-direction: column;
     align-items: center;
 
-    // & div {
-    //     width: 100%;
-    //     max-width: 1146px;
-    //     padding: 0 40px;
-    // }
-
     @media screen and (max-width:890px) {
         & {
             display: flex;
             flex-direction: column;
-            max-width: 100%;
+            max-width: 890px;
             width: 100%;
-            margin: 30px auto;
+            margin: 30px auto 0;
+            overflow-y: hidden;
 
-            & section {
-                flex-grow: 1;
+            & div {
                 width: 100%;
             }
         }

@@ -27,7 +27,7 @@ export const Experience = ({ id }) => {
 
 
     return (
-        <section id={id} className={styles.experience}>
+        <div id={id} className={styles.experience}>
             <h5 className={styles.experienceTitle}>My <span>experience</span></h5>
             <ul className={styles.experienceList}>
                 <li>
@@ -85,6 +85,6 @@ export const Experience = ({ id }) => {
                     </Link>
                 </li>
             </ul>
-        </section>
+        </div>
     )
 }

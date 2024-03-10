@@ -3,9 +3,11 @@
 
   @media screen and (max-width:890px) {
     & {
-      display: block;
+      display: flex;
+      justify-content: flex-end;
       position: relative;
-      margin: 25px;
+      margin: 25px 0;
+      width: 100%;
     }
   }
 }

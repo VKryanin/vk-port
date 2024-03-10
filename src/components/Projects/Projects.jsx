@@ -17,7 +17,7 @@ const slider = [
         name: 'I-Tech',
         subtitle: 'Development of a corporate CRM system for internal use. Created several modules and optimized sending requests to the backend.',
         stack: ['React', 'MobX', 'AntD', 'BEM'],
-        link: 'https://tessera.hopto.org/'
+        link: 'https://i-tech.su/'
     },
     {
         photo: roman,

@@ -33,15 +33,6 @@
         font-size: 1.1vw;
     }
 
-    @media screen and (max-width:890px) {
-        & {
-            max-width: 100%;
-            margin: 15px 0 0;
-            padding: 25px;
-            background-color: var(--bg--fon);
-        }
-    }
-
     &:hover {
         background-color: var(--bg--fon);
 
@@ -134,7 +125,22 @@
         }
     }
 
-    @media screen and (max-width: 560px){
+    @media screen and (max-width:890px) {
+        & {
+            max-width: 800px;
+            width: 100%;
+            margin: 15px 0 0;
+            padding: 25px;
+            background-color: var(--bg--fon);
+            flex-grow: 1;
+        }
+
+        &:first-of-type {
+            margin: 0;
+        }
+    }
+
+    @media screen and (max-width: 560px) {
         &Close {
             right: -5px;
             top: -40px;

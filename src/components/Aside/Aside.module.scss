@@ -13,4 +13,10 @@
   &Wrapper {
     width: 100%;
   }
+
+  @media screen and (max-width:890px) {
+    & {
+      display: none;
+    }
+  }
 }

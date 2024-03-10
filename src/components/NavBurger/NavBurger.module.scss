@@ -1,8 +1,33 @@
-
 .navBurger {
   width: 100%;
-  max-width: 300px;
+  max-width: 150px;
+  height: auto;
   padding: 15px;
   background-color: var(--bg--project);
   border-radius: 5px;
+  position: absolute;
+  top: 35px;
+  transition: all .3s ease-in-out;
+
+  &Active {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &Unactive {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  & li {
+    margin-bottom: 12px;
+  }
+
+  & li:last-of-type {
+    margin-bottom: 0;
+  }
+
+  & span {
+    margin-left: 8px;
+  }
 }
