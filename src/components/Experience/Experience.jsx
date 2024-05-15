@@ -6,8 +6,6 @@ import styles from './Experience.module.scss';
 export const Experience = ({ id }) => {
     const [hoveredItem, setHoveredItem] = useState(null);
 
-
-
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
     useEffect(() => {
         const handleResize = () => {
@@ -18,12 +16,12 @@ export const Experience = ({ id }) => {
         return () => {
             window.removeEventListener('resize', handleResize);
         };
-    }, [])
+    }, []);
 
     const handleItemHover = (index) => {
-        if (screenWidth <= 890) return
+        if (screenWidth <= 890) return;
         setHoveredItem(index);
-    }
+    };
 
 
     return (
@@ -34,7 +32,7 @@ export const Experience = ({ id }) => {
                     <Link
                         to="https://i-tech.su/"
                         target='_blank'
-                        className={`${styles.experienceItem} ${hoveredItem !== null && hoveredItem !== 0 ? styles.darken : ''}`}
+                        className={`${styles.experienceItem} ${hoveredItem !== 0 ? styles.darken : ''}`}
                         onMouseEnter={() => handleItemHover(0)}
                         onMouseLeave={() => handleItemHover(null)}>
                         <p className={styles.experienceData}>11.2023 - по настоящее время </p>
@@ -52,8 +50,8 @@ export const Experience = ({ id }) => {
                     <Link
                         to="https://tessera.hopto.org/"
                         target='_blank'
-                        className={`${styles.experienceItem} ${hoveredItem !== null && hoveredItem !== 0 ? styles.darken : ''}`}
-                        onMouseEnter={() => handleItemHover(0)}
+                        className={`${styles.experienceItem} ${hoveredItem !== 1 ? styles.darken : ''}`}
+                        onMouseEnter={() => handleItemHover(1)}
                         onMouseLeave={() => handleItemHover(null)}>
                         <p className={styles.experienceData}>06.2023 - 11.2023</p>
                         <div className={styles.experienceWrapper}>
@@ -70,8 +68,8 @@ export const Experience = ({ id }) => {
                     <Link
                         to="https://practicum.yandex.ru/catalog/programming/"
                         target='_blank'
-                        className={`${styles.experienceItem} ${hoveredItem === 0 ? styles.darken : ''}`}
-                        onMouseEnter={() => handleItemHover(1)}
+                        className={`${styles.experienceItem} ${hoveredItem !== 2 ? styles.darken : ''}`}
+                        onMouseEnter={() => handleItemHover(2)}
                         onMouseLeave={() => handleItemHover(null)}>
                         <p className={styles.experienceData}>10.2022 - 09.2023</p>
                         <div className={styles.experienceWrapper}>
