@@ -70,12 +70,11 @@
     width: 100%;
     object-fit: cover;
     margin-top: 70px;
-    padding: 8px;
+    padding: 12px;
     opacity: 0;
     height: 350px;
     transition: opacity 0.6s ease-in-out, width 0.3s ease-in-out;
     border-radius: 5px;
-
 
     &:hover {
       background-color: var(--bg--fon);
@@ -92,13 +91,12 @@
   &ItemActive {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     opacity: 1;
-    // transition: opacity .8s ease-in-out;
     visibility: visible;
   }
 
   &ItemInactive {
-    // display: none;
     visibility: hidden;
     width: 0;
     padding: 0;
@@ -119,6 +117,7 @@
     margin-top: 12px;
     max-width: 100%;
     box-sizing: border-box;
+    
 
     & div {
       display: flex;
@@ -153,9 +152,9 @@
     width: 50%;
     max-width: 500px;
     max-height: 280px;
-    object-fit: contain;
     border-radius: 5px;
     margin-right: 16px;
+    float: right;
   }
 
   &Subtitle {
