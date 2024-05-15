@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 
-
 import styles from './Projects.module.scss';
 
 import movies from '../../images/movies.jpg';
@@ -10,6 +9,7 @@ import stuff from '../../images/stuff.jpg';
 import roman from '../../images/Roman.jpg';
 import itech from '../../images/i-tech.jpg'
 import { Link } from 'react-router-dom';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 const slider = [
     {
@@ -83,8 +83,10 @@ export const Projects = ({ id }) => {
                     </button>
                 </div>
             </div>
+            {/* <div className={styles.projectsWrapper}> */}
             <div className={styles.projectsWrapper}>
                 {slider.map((item, index) =>
+
                     <Link to={item.link} target='_blank' key={item.name} className={`${styles.projectsItem} ${index === activeIndex
                         ? styles.projectsItemActive
                         : styles.projectsItemInactive}`}>
@@ -107,6 +109,7 @@ export const Projects = ({ id }) => {
                     </Link>
                 )}
             </div>
+            {/* </div> */}
         </div>
     );
 };
