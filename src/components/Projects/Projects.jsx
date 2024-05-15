@@ -9,7 +9,6 @@ import stuff from '../../images/stuff.jpg';
 import roman from '../../images/Roman.jpg';
 import itech from '../../images/i-tech.jpg'
 import { Link } from 'react-router-dom';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 const slider = [
     {
