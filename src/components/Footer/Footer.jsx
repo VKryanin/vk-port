@@ -26,7 +26,7 @@ export const Footer = () => {
         <Contact />
       </div>
       <div className={styles.footerWrapper}>
-        <p className={styles.footerText}>Business inquiries</p>
+        <p className={styles.footerText}>Почта для связи</p>
         <p className={styles.footerEmail} onClick={handleEmailClick}>krianinvv@internet.ru</p>
         <p className={styles.footerCopy}>VITALY KRYANIN © 2023</p>
       </div>

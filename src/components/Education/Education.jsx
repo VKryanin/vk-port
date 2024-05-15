@@ -1,4 +1,4 @@
-import { EduEng } from '../../utils/education';
+import { EduEng, EduRu } from '../../utils/education';
 import { EducationItem } from '../EducationItem/EducationItem';
 
 import styles from './Education.module.scss';
@@ -7,9 +7,9 @@ export const Education = ({ id }) => {
 
     return (
         <div id={id} className={styles.education}>
-            <h5 className={styles.educationTitle}>A little bit <span className={styles.educationGreen}>about</span> my&nbsp;<span className={styles.educationGrey}>education</span></h5>
+            <h5 className={styles.educationTitle}> Немного <span className={styles.educationGreen}>о</span> моем&nbsp;<span className={styles.educationGrey}>образовании </span></h5>
             <ul className={styles.educationList}>
-                {EduEng.reverse().map(({ Name, Age, Profile, Image }, index) => (
+                {EduRu.reverse().map(({ Name, Age, Profile, Image }, index) => (
                     <EducationItem
                         key={index}
                         name={Name}

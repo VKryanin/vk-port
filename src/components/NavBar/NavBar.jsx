@@ -36,7 +36,7 @@ export const NavBar = () => {
                         duration={500}
                         onSetActive={handleSetActive}
                     >
-                        About
+                        Обо мне
                     </Link>
                 </li>
                 <li className={styles.navbarItem}>
@@ -48,7 +48,7 @@ export const NavBar = () => {
                         duration={500}
                         onSetActive={handleSetActive}
                     >
-                        Education
+                        Обучение
                     </Link>
                 </li>
                 <li className={styles.navbarItem}>
@@ -60,7 +60,7 @@ export const NavBar = () => {
                         duration={500}
                         onSetActive={handleSetActive}
                     >
-                        Experience
+                        Опыт
                     </Link>
                 </li>
                 <li className={styles.navbarItem}>
@@ -72,7 +72,7 @@ export const NavBar = () => {
                         duration={500}
                         onSetActive={handleSetActive}
                     >
-                        All projects
+                        Мои проекты
                     </Link>
                 </li>
             </ul>

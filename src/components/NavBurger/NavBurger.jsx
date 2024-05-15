@@ -20,7 +20,7 @@ export const NavBurger = ({ isActive }) => {
             duration={500}
           >
             <ImProfile />
-            <span>About</span>
+            <span>Обо мне</span>
           </Link>
         </li>
         <li>
@@ -31,7 +31,7 @@ export const NavBurger = ({ isActive }) => {
             duration={500}
           >
             <MdCastForEducation />
-            <span>Education</span>
+            <span>Обучение</span>
           </Link>
         </li>
         <li>
@@ -42,7 +42,7 @@ export const NavBurger = ({ isActive }) => {
             duration={500}
           >
             <BsPersonWorkspace />
-            <span>Experience</span>
+            <span>Опыт</span>
           </Link>
         </li>
         <li>
@@ -53,7 +53,7 @@ export const NavBurger = ({ isActive }) => {
             duration={500}
           >
             <FaBriefcase />
-            <span>All projects</span>
+            <span>Проекты</span>
           </Link>
         </li>
       </ul>

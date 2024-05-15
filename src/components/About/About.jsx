@@ -18,20 +18,20 @@ export const About = ({ id }) => {
                 <span className={styles.aboutGrey}>code</span>
             </h4>
             <p className={styles.aboutText}>
-                In 2022, I decided to try my hand in IT.
-                I studied Java and Python, worked as a tester,
-                but I became completely engrossed in web development.
-                I created an <Link className={styles.aboutLink} to="http://cocshop.ru/" target='_blank'>online store</Link> for a friend, successfully completed the&nbsp;"Web&nbsp;Developer"
-                training from <Link className={styles.aboutLink} to="https://practicum.yandex.ru/frontend-developer/?from=catalog" target='_blank'>Yandex.Praktikum</Link>, and simultaneously learned frontend development
-                on&nbsp;<Link className={styles.aboutLink} to="https://app.rs.school/" target='_blank'>RollingScopes</Link> online platform. I worked on the creation of a website for
-                <Link className={styles.aboutLink} to="https://tessera.hopto.org/" target='_blank'> "Roman Mosaic School"</Link> in Astana.
+                Свой путь в програмирование я начал с изучения Java, Python и работой тестировщика.
+                Первым моим проектом был <Link className={styles.aboutLink} to="http://cocshop.ru/" target='_blank'>интернет магазин</Link> для друга.
+                Этот небольшой опыт показал мне, что разработка меня увлекает полностью и я принял решение пройти обучение от
+                <Link className={styles.aboutLink} to="https://practicum.yandex.ru/frontend-developer/?from=catalog" target='_blank'> Яндекс.Практикум</Link> в 2022.
+                В 2023 году я успешно сдал дипломную работу по направлению&nbsp;"Веб&nbsp;разработчик".
+                Во время обучения, я устроился на проектую работу в стартап <Link className={styles.aboutLink} to="https://tessera.hopto.org/" target='_blank'> Roman Mosaic School </Link>
+                и параллельно начал обучение на платформе <Link className={styles.aboutLink} to="https://app.rs.school/" target='_blank'>RollingScopes</Link>, созданой frontend разработчиками.
             </p>
             <p className={styles.aboutText}>
-                My main focus these days is to improve my skills and implement my existing skills.
+                Моя цель — улучшить свои навыки и реализовать приобретенные навыки.
             </p>
             <p className={styles.aboutText}>
-                When I'm not at the computer, I usually enjoy going to the gym,
-                playing board games, or watching how a pirate searches for <span>One Piece</span>.
+                По мимо программирования, я хожу в зал, играю в настольные игры, выезжаю с палатками
+                или смотрю сериалы, фильмы.
             </p>
         </div >
     )

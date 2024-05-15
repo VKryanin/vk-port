@@ -15,7 +15,7 @@ export const BurgerMenu = ({ status }) => {
                         duration={500}
                         className={styles.burgerLink}
                     >
-                        About
+                        Обо мне
                     </Link>
                 </li>
                 <li className={styles.burgerItem}>
@@ -25,7 +25,7 @@ export const BurgerMenu = ({ status }) => {
                         duration={500}
                         className={styles.burgerLink}
                     >
-                        Education
+                        Обучение
                     </Link>
                 </li>
                 <li className={styles.burgerItem}>
@@ -35,7 +35,7 @@ export const BurgerMenu = ({ status }) => {
                         duration={500}
                         className={styles.burgerLink}
                     >
-                        Experience
+                        Опыт
                     </Link>
                 </li>
                 <li className={styles.burgerItem}>
@@ -45,7 +45,7 @@ export const BurgerMenu = ({ status }) => {
                         duration={500}
                         className={styles.burgerLink}
                     >
-                        All projects
+                        Мои проекты
                     </Link>
                 </li>
             </ul>
