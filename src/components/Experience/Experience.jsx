@@ -5,6 +5,7 @@ import styles from './Experience.module.scss';
 
 export const Experience = ({ id }) => {
     const [hoveredItem, setHoveredItem] = useState(null);
+    const [isHover, setIsHover] = useState(false)
 
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
     useEffect(() => {
@@ -21,6 +22,13 @@ export const Experience = ({ id }) => {
     const handleItemHover = (index) => {
         if (screenWidth <= 890) return;
         setHoveredItem(index);
+        setIsHover(true)
+    };
+
+    const handleItemLeave = () => {
+        if (screenWidth <= 890) return;
+        setHoveredItem(null);
+        setIsHover(false)
     };
 
 
@@ -32,9 +40,9 @@ export const Experience = ({ id }) => {
                     <Link
                         to="https://i-tech.su/"
                         target='_blank'
-                        className={`${styles.experienceItem} ${hoveredItem !== 0 ? styles.darken : ''}`}
+                        className={`${styles.experienceItem} ${hoveredItem !== 0 && isHover ? styles.darken : ''}`}
                         onMouseEnter={() => handleItemHover(0)}
-                        onMouseLeave={() => handleItemHover(null)}>
+                        onMouseLeave={handleItemLeave}>
                         <p className={styles.experienceData}>11.2023 - по настоящее время </p>
                         <div className={styles.experienceWrapper}>
                             <h6 className={styles.experienceLink}>I-Tech
@@ -50,9 +58,9 @@ export const Experience = ({ id }) => {
                     <Link
                         to="https://tessera.hopto.org/"
                         target='_blank'
-                        className={`${styles.experienceItem} ${hoveredItem !== 1 ? styles.darken : ''}`}
+                        className={`${styles.experienceItem} ${hoveredItem !== 1 && isHover ? styles.darken : ''}`}
                         onMouseEnter={() => handleItemHover(1)}
-                        onMouseLeave={() => handleItemHover(null)}>
+                        onMouseLeave={handleItemLeave}>
                         <p className={styles.experienceData}>06.2023 - 11.2023</p>
                         <div className={styles.experienceWrapper}>
                             <h6 className={styles.experienceLink}>Roman Mosaic School
@@ -68,9 +76,9 @@ export const Experience = ({ id }) => {
                     <Link
                         to="https://practicum.yandex.ru/catalog/programming/"
                         target='_blank'
-                        className={`${styles.experienceItem} ${hoveredItem !== 2 ? styles.darken : ''}`}
+                        className={`${styles.experienceItem} ${hoveredItem !== 2 && isHover ? styles.darken : ''}`}
                         onMouseEnter={() => handleItemHover(2)}
-                        onMouseLeave={() => handleItemHover(null)}>
+                        onMouseLeave={handleItemLeave}>
                         <p className={styles.experienceData}>10.2022 - 09.2023</p>
                         <div className={styles.experienceWrapper}>
                             <h6 className={styles.experienceLink}>Яндекс.Практикум
