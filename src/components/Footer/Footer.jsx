@@ -1,13 +1,8 @@
 import styles from './Footer.module.scss'
 
-import { useState } from 'react';
-
 import { Contact } from '../Contact/Contact'
 
 export const Footer = () => {
-
-  const [message, setMessage] = useState('');
-
   const handleEmailClick = () => {
     const emailSubject = 'Business Inquiry';
     const emailBody = 'Hello, I have a business inquiry.';

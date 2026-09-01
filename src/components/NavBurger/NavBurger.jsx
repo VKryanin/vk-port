@@ -1,5 +1,5 @@
 
-import { Link, scroller } from 'react-scroll';
+import { Link } from 'react-scroll';
 import { ImProfile } from "react-icons/im";
 import { MdCastForEducation } from "react-icons/md";
 import { BsPersonWorkspace } from "react-icons/bs";

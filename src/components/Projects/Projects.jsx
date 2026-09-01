@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 
 import styles from './Projects.module.scss';
 
-import movies from '../../images/movies.jpg';
 import mesto from '../../images/mesto.jpg';
 import travel from '../../images/travel.jpg';
 import stuff from '../../images/stuff.jpg';

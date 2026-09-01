@@ -1,4 +1,4 @@
-import { EduEng, EduRu } from '../../utils/education';
+import { EduRu } from '../../utils/education';
 import { EducationItem } from '../EducationItem/EducationItem';
 
 import styles from './Education.module.scss';

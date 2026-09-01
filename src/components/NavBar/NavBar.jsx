@@ -1,29 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import { Link, scroller } from 'react-scroll';
+import React from 'react';
+import { Link } from 'react-scroll';
 import styles from './NavBar.module.scss';
 
 export const NavBar = () => {
-    const [activeLink, setActiveLink] = useState('about');
-
-    const handleSetActive = (to) => {
-        setActiveLink(to);
-    };
-
-    useEffect(() => {
-        const scrollOffset = -100; 
-        scroller.register('begin', (to, element) => {
-        });
-
-        scroller.register('end', (to, element) => {
-            setActiveLink(to);
-        });
-
-        return () => {
-            scroller.unregister('begin');
-            scroller.unregister('end');
-        };
-    }, []);
-
     return (
         <nav className={styles.navbar}>
             <ul className={styles.navbarList}>
@@ -34,7 +13,6 @@ export const NavBar = () => {
                         spy={true}
                         smooth={true}
                         duration={500}
-                        onSetActive={handleSetActive}
                     >
                         Обо мне
                     </Link>
@@ -46,7 +24,6 @@ export const NavBar = () => {
                         spy={true}
                         smooth={true}
                         duration={500}
-                        onSetActive={handleSetActive}
                     >
                         Обучение
                     </Link>
@@ -58,7 +35,6 @@ export const NavBar = () => {
                         spy={true}
                         smooth={true}
                         duration={500}
-                        onSetActive={handleSetActive}
                     >
                         Опыт
                     </Link>
@@ -70,7 +46,6 @@ export const NavBar = () => {
                         spy={true}
                         smooth={true}
                         duration={500}
-                        onSetActive={handleSetActive}
                     >
                         Мои проекты
                     </Link>

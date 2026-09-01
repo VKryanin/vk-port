@@ -1,6 +1,5 @@
 import styles from './Aside.module.scss'
 
-import { Contact } from "../Contact/Contact"
 import { NavBar } from "../NavBar/NavBar"
 
 export const Aside = ({ setActiveLink, activeLink }) => {
